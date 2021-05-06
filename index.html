@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Cadastro de clientes</title>
+</head>
+<body>
+  
+  <div id="card">
+  <div id="card-left"></div>
+  <div id="card-right">
+    <h1>Cadastro de clientes</h1>
+
+  <form action="dados-do-form" method="post" id="formulario">
+    <h3>Dados Cadastrais</h3>
+    <div class="name-form">
+      <label for="">Nome: </label>
+      <input placeholder="Nome" type="text" id="nome" class="input-form" />
+      <label for="">CPF/CNPJ:</label>
+      <input placeholder="CPF/CNPJ" type="text" id="cpf/cnpj"class="input-form"/>
+    </div>
+
+    <div class="name-form">
+      <label for="">E-mail:</label>
+      <input placeholder="E-mail" type="email" id="email" class="input-form"/>
+      <label for="">Telefone:</label>
+      <input placeholder="Telefone" type="tel" id="telefone" class="input-form"/>
+    </div>
+
+    <h3>Endereço</h3>
+    <div id="endereco">
+      <div class="input-area">
+        <label for="">CEP:</label>
+        <input placeholder="CEP" type="text" id="cep" class="input-form"/>
+        <label for="">Numero: </label>
+        <input placeholder="Numero" type="number" id="numero" class="input-form"/>
+      </div>
+  
+      <div class="input-area">
+        <label for="">Logradouro:</label>
+        <input placeholder="Logradouro" type="text" id="logradouro"class="input-form"/>
+        <label for="">Estado:</label>
+        <input placeholder="Estado" type="text" id="estado" class="input-form"/>
+      </div>
+
+    <div class="input-area"></div>
+      <input placeholder="Bairro" type="text" id="bairro"class="input-form"/>
+    </div>
+
+    <div id="bts">
+      <button type="submit">Cadastrar</button>
+      <button id="bt2" type="submit">Excluir</button>
+    </div>
+    
+
+    <footer></footer>
+ 
+</form>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>
