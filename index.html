@@ -7,59 +7,77 @@
   <link rel="stylesheet" href="./style.css">
   <title>Cadastro de clientes</title>
 </head>
+
 <body>
+  <div id="card-left"></div> <!-- Card esquerdo verde-->
   
-  <div id="card">
-  <div id="card-left"></div>
   <div id="card-right">
-    <h1>Cadastro de clientes</h1>
 
-  <form action="dados-do-form" method="post" id="formulario">
-    <h3>Dados Cadastrais</h3>
-    <div class="name-form">
-      <label for="">Nome: </label>
-      <input placeholder="Nome" type="text" id="nome" class="input-form" />
-      <label for="">CPF/CNPJ:</label>
-      <input placeholder="CPF/CNPJ" type="text" id="cpf/cnpj"class="input-form"/>
-    </div>
-
-    <div class="name-form">
-      <label for="">E-mail:</label>
-      <input placeholder="E-mail" type="email" id="email" class="input-form"/>
-      <label for="">Telefone:</label>
-      <input placeholder="Telefone" type="tel" id="telefone" class="input-form"/>
-    </div>
-
-    <h3>Endereço</h3>
-    <div id="endereco">
-      <div class="input-area">
-        <label for="">CEP:</label>
-        <input placeholder="CEP" type="text" id="cep" class="input-form"/>
-        <label for="">Numero: </label>
-        <input placeholder="Numero" type="number" id="numero" class="input-form"/>
-      </div>
-  
-      <div class="input-area">
-        <label for="">Logradouro:</label>
-        <input placeholder="Logradouro" type="text" id="logradouro"class="input-form"/>
-        <label for="">Estado:</label>
-        <input placeholder="Estado" type="text" id="estado" class="input-form"/>
-      </div>
-
-    <div class="input-area"></div>
-      <input placeholder="Bairro" type="text" id="bairro"class="input-form"/>
-    </div>
-
-    <div id="bts">
-      <button type="submit">Cadastrar</button>
-      <button id="bt2" type="submit">Excluir</button>
-    </div>
     
+    <div class="formulario"> <!--Formulario-->
+      <div class="head-card">
+        <img src="./img/helpper-logo.png" alt="">
+        <h1 class="col-md-12">Cadastro de clientes</h1>
+      </div> 
 
-    <footer></footer>
- 
-</form>
-</div>
+  
+      <form class="" id="contato" >
+      <div class="form-row">
+  
+          <div class="">
+            <input type="text" class="form-imput" id="nome" onblur="uppercase()" name="nome" placeholder="Nome" value="" required="">
+          </div>
+  
+          <div class="">
+            <input type="email" class="form-imput" id="email" name="email" placeholder="E-mail" value="" required="">
+          </div>
+          
+          <div class="">
+            <input type="text" class="form-imput" id="cpfcnpj" name="cpf/cnpj" placeholder="Cpf/Cnpj">
+          </div>
+
+          <div class="">
+            <input type="text" class="form-imput" id="telefone" name="telefone" placeholder="telefone" value="">
+          </div>
+  
+  
+          <div class="">
+            <input type="text" class="form-imput" id="cep" name="cep" placeholder="Cep">  
+          </div>
+
+          <div class="">
+            <input type="text" class="form-imput" id="logradouro" name="logradouro" placeholder="Logradouro">  
+          </div>
+
+          <div id="">
+            <input type="text" class="form-imput" id="cidade" onblur="uppercase()" name="cidade" placeholder="Cidade">  
+            
+              <input type="text" class="form-imput" id="numero" name="numero" placeholder="Numero">  
+              <input type="text" class="form-imput" id="bairro" name="bairro" placeholder="Bairro">  
+              <input type="text" class="form-imput" id="estado" name="estado" placeholder="Estado">
+                
+            </div>
+
+            <a href=""></a>
+          <div class="buttons">
+            <button  type="submit" class="btn">
+              <a href="./list.html">Cadastrar</a>
+            </button>
+
+            <button type="reset" class="btn2">
+              Apagar
+            </button>
+          </div>
+  
+      </div>
+      </form>
+      
+    </div>
+  </div>
+  
+  <h2></h2>
+  
+  
   <script src="./script.js"></script>
 </body>
 </html>
