@@ -5,7 +5,16 @@
   --white:#fff;
   --red:rgb(235, 10, 10);
 }
-
+*{
+  font-family:Arial, Helvetica, sans-serif;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100%;
+ 
+}
 
 
 table {
@@ -32,10 +41,11 @@ button{
   border: 0;
 }
 img{
-  margin-left: 5%;
+  
   width: 200px;
   padding: 10px;
 }
+
   #btnd{
 background-color: var(--red);
   }
@@ -46,4 +56,32 @@ background-color: var(--red);
   #btnv {
     
     background-color: var(--green);
+  }
+
+  #card-left{
+    background-color:var(--green);
+    width:10%;
+    height:100vmax;
+  }
+  
+
+  #logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  #tabela{
+    display: flex;
+    justify-content: center;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #aeea0a;
+    height: 50px;
+    margin-top: 100%;
   }
